@@ -1,0 +1,3 @@
+[environment.development]
+theme = "THEME ID"
+store = "STORE NAME"
