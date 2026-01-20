@@ -1,5 +1,5 @@
 ### If they have `Afterpay` app there's no need to copy this
-1. Add this code snippet of `Afterpay` after `html` element in `layout/theme.liquid`:
+Add this code snippet of `Afterpay` after `html` element in `layout/theme.liquid`:
 ```liquid
 <!-- AFTERPAY -->
 <!-- Begin Shopify-Afterpay JavaScript Snippet (v1.2.1) -->
