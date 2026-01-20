@@ -1,5 +1,4 @@
-## Requirements
-1. Add this styles to re-design the `Kaching Bundles`
+Add this `css` to `assets/critical.css` to re-design the `Kaching Bundles` app.
 
 1st Design
 ```css
