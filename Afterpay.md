@@ -1,4 +1,3 @@
-## Requirements
 ### If they have `Afterpay` app there's no need to copy this
 1. Add this code snippet of `Afterpay` after `html` element in `layout/theme.liquid`:
 ```liquid
