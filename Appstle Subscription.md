@@ -1,4 +1,4 @@
-### assets/critical.css
+Add this `css` to `assets/critical.css`.
 ```css
 /* APPSTLE SUBSCRIPTION */
 .appstle_subscription_wrapper {
