@@ -1,4 +1,3 @@
-## Requirements
 1. Add the `Custom Event Hook` of `Zepto Product Personalizer` in `assets/cart.js`:
 ```js
 //! ZEPTO PRODUCT PERSONALIZER
