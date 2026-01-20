@@ -117,3 +117,28 @@ Add this `css` to `assets/critical.css`.
   margin: 0 !important;
 }
 ```
+
+Add this `code` to `assets/cart.js` to get the selling plan property and add it to cart item.
+```js
+const formDataObj = new FormData(this.submitForm);
+    
+const itemData = {
+  id: formDataObj.get('id'),
+  quantity: parseInt(formDataObj.get('quantity') || 1),
+  selling_plan: formDataObj.get('selling_plan') || ''
+};
+
+const properties = {};
+for (const [key, value] of formDataObj.entries()) {
+  if (key.startsWith('properties[')) {
+    const propKey = key.match(/properties\[(.+)\]/)[1];
+    properties[propKey] = value;
+    }
+  }
+
+if (Object.keys(properties).length) {
+  itemData.properties = properties;
+}
+
+const payload = { items: [itemData], sections: "cart-drawer,cart-icon" };
+```
