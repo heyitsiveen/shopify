@@ -120,7 +120,9 @@ Add this `css` to `assets/critical.css`.
 
 Add this `liquid` to `snippets/cart-item.js` to display the selling plan property in cart item
 ```liquid
-{% unless item.selling_plan_allocation == nil %} <p class="cart__product-meta">{{ item.selling_plan_allocation.selling_plan.name }}</p> {% endunless %}
+{%- unless item.selling_plan_allocation == nil -%}
+  <p class="cart__product-meta">{{- item.selling_plan_allocation.selling_plan.name -}}</p>
+{%- endunless -%}
 ```
 
 Add this `code` to `assets/cart.js` to get the selling plan property and add it to cart item.
